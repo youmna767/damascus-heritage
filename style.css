@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Tajawal', sans-serif;
+    background-image: url('photo_2026-page1.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar {
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: rgba(122, 95, 70, 0.88);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(90, 68, 48, 0.4);
+}
+
+.logo {
+    font-family: 'Amiri', serif;
+    font-size: 22px;
+    color: #FDFBF7;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    direction: rtl;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E6D5C3;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+.footer-quote {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #5c3a21;
+    font-family: 'Amiri', serif, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+
+.hero-container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+
+.hero-title {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.hero-title h1 {
+    font-family: 'Amiri', serif;
+    font-size: 46px;
+    color: #3D2C22;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+.intro-box {
+    background: rgba(255, 248, 238, 0.2);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(139, 111, 85, 0.2);
+    border-radius: 18px;
+    padding: 30px;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(61, 44, 34, 0.05);
+}
+
+.intro-box p {
+    font-size: 16px;
+    color: #2C1E15;
+    line-height: 2.3;
+    text-align: justify;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E6D5C3;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/*----------------------*/
+
+body.mosques-page {
+    height: 100vh;
+    overflow-y: auto;
+    background-image: url('photo_2026-10-24_11-19-22.jpg');
+    background-size: cover;
+    background-position: top 75px center;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+
+.timeline-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 30px;
+    align-items: center;
+}
+
+
+.timeline-row {
+    width: 100%;
+    display: flex;
+
+}
+
+.timeline-row.right-side {
+    justify-content: flex-start;
+    transform: translateX(-90px);
+}
+
+    .timeline-row.left-side {
+        justify-content: flex-end;
+        transform: translateX(90px);
+
+    }
+
+
+    .card-box {
+        width: 720px;
+        height: 150px;
+        background: rgba(255, 248, 238, 0.35);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(139, 111, 85, 0.25);
+        border-radius: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 15px;
+        box-shadow: 0 8px 25px rgba(61, 44, 34, 0.05);
+        position: relative;
+        z-index: 1;
+        overflow: visible;
+    }
+
+
+    .content-side {
+        flex: 1;
+        height: 100%;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        direction: rtl;
+        text-align: right;
+    }
+
+
+    .image-circle {
+        width: 200px;
+        height: 200px;
+        background: transparent;
+        border-radius: 50%;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0 5px 20px rgba(61, 44, 34, 0.05);
+
+    }
+
+    .content-side {
+        flex: 1;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        direction: rtl;
+        text-align: right;
+        overflow: hidden;
+    }
+
+
+    .mosque-title {
+        font-family: 'Tranditional Arabic', 'Tahoma', serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2C1E16;
+        margin-bottom: 4px;
+    }
+
+
+    .mosque-location {
+        font-family: 'Tahoma', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        color: #8C6D53;
+        margin-bottom: 6px;
+    }
+
+
+    .mosque-desc {
+        font-family: 'Cairo', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: #4A3B32;
+        line-height: 1.5;
+    }
+
+
+    .highlight-word {
+        font-weight: 700;
+        color: #5C4033;
+    }
+
+    /*-----------------------*/
+
+    body.castles-page {
+
+        background-image: url('photo_2026-10-24_11-19-22.jpg');
+        background-size: cover;
+        background-position: top 75px center;
+        background-attachment: fixed;
+        margin: 0;
+        padding-bottom: 50px;
+        padding-top: 85px;
+    }
+
+
+
+    .castles-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+        font-family: 'Amiri', serif;
+        z-index: 1;
+    }
+
+
+    .center-compass {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0.9;
+        pointer-events: none;
+    }
+
+    .castle-card {
+        background-color: rgba(247, 239, 222, 0.42);
+        border: 2px solid #5c3a21;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease;
+    }
+
+    .castle-card:hover {
+        transform: translateY(-3px);
+    }
+
+
+    .castle-img {
+        width: 100%;
+        height: 100%;
+        min-height: 160px;
+        border-left: 1.5px solid #5c3a21;
+    }
+
+    .castle-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .castle-text {
+        padding: 15px 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .castle-text h3 {
+        color: #432512;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+        border-bottom: 1px dashed #8c6239;
+        padding-bottom: 4px;
+    }
+
+
+    .castle-text p {
+        color: #2c1a0e;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    /*--------------------*/
+    body.palaces-page {
+        margin: 0;
+        padding: 0;
+        background: url('photo_2026-page3.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        min-height: 100vh;
+        padding-top: 85px;
+    }
+
+
+
+    .palaces-title {
+        font-family: 'Amiri', serif;
+        font-size: 2.4rem;
+        color: #f3e5ab;
+        margin-bottom: 8px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .palaces-subtitle {
+        font-size: 1.05rem;
+        color: #e0d0c0;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+
+    .palaces-columns-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+        max-width: 1250px;
+        margin: 20px auto 40px;
+        padding: 0 20px;
+    }
+
+
+    .palace-column {
+        flex: 1;
+        background: rgba(245, 240, 230, 0.60);
+        border: 1px solid rgba(212, 175, 55, 0.4);
+        border-radius: 12px;
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .palace-column:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+    }
+
+
+    .palace-column.col-text-top {
+        margin-top: 0px;
+    }
+
+    .palace-column.col-img-top {
+        margin-top: 130px;
+    }
+
+
+    .hexagon-wrapper {
+        width: 195px;
+        height: 180px;
+        margin: 15px 0;
+        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+        display: flex;
+        justify-content: center;
+    }
+
+    .hexagon-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        border: 2px solid #f3e5ab;
+        transition: transform 0.3s ease;
+    }
+
+    .palace-column:hover .hexagon-img {
+        transform: scale(1.05);
+    }
+
+
+    .palace-content h2 {
+        font-family: 'Amiri', serif;
+        font-size: 1.35rem;
+        color: #4a2e18;
+        margin-bottom: 8px;
+    }
+
+    .palace-content p {
+        font-size: 0.88rem;
+        line-height: 1.55;
+        color: #2c1e14;
+        margin: 0;
+    }
+
+    /*------------------------*/
+    body.about-page {
+        margin: 0;
+        padding: 0;
+        padding-top: 75px;
+        font-family: 'Cairo', sans-serif;
+        background: url('photo_2026-page1.jpg') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+
+    .about-main-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-height: calc(100vh - 75px);
+        padding: 30px 20px;
+
+
+
+    }
+
+    .about-boxes-container {
+
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-end;
+        justify-content: center;
+        padding-left: 100px;
+        padding-right: 50px;
+        margin-right: auto;
+        margin-left: 50px;
+    }
+
+
+    .about-box {
+        background: rgba(255, 248, 238, 0.2);
+        border: 1px solid rgba(139, 111, 85, 0.2);
+        border-radius: 18px;
+        padding: 30px;
+        max-width: 420px;
+        width: 100%;
+        text-align: center;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 10px 30px rgba(61, 44, 34, 0.05);
+    }
+
+
+    .about-box h2 {
+
+
+        font-family: 'Amiri', serif;
+        font-size: 46px;
+        color: #3D2C22;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    .about-box h2:first-child {
+        margin-top: 0;
+    }
+
+
+    .about-box p {
+
+        font-size: 16px;
+        color: #2C1E15;
+        line-height: 2.3;
+        text-align: justify;
+    }
